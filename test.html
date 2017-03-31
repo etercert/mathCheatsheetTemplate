@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="template.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class = "container" id="container">
+<h1 id="podstawowe-definicje">Podstawowe definicje</h1>
+<h2 id="zmienna-losowa">Zmienna losowa</h2>
+<p><span class="math inline">\((\Omega, \mathcal{F})\)</span> - p. mierzalna</p>
+<p>Zmienna losowa to funkcja mierzalna</p>
+<h2 id="rozkład-prawdopodobieństwa">Rozkład prawdopodobieństwa</h2>
+<p>Funkcja <span class="math inline">\(\mathbb{P}_X :  \mathcal{B}(\mathbb{R}) \rightarrow \mathbb{R}\)</span> określona wzorem <span class="math inline">\(\mathbb{P}_X(B) = \mathbb{P}(X^{-1}(B))\)</span> <span class="math inline">\(\mathbb{P}_X(B) = \mathbb{P}(X \in B)\)</span></p>
+<h2 id="dystrybuanta">Dystrybuanta</h2>
+<p>Funkcja rzerzywista F t, że:</p>
+<ol type="1">
+<li>F jest niemalejąca</li>
+<li>F jest prawostronnie ciągła</li>
+<li><span class="math inline">\(\lim_{x-&gt;-\infty}F(x) = 0\)</span> oraz <span class="math inline">\(\lim_{x-&gt;\infty}F(x) = 1\)</span></li>
+</ol>
+<h2 id="dystrybuanta-zmiennej-losowej-x">Dystrybuanta zmiennej losowej X</h2>
+<p><span class="math inline">\(F_X(x) = \mathbb{P}_X((-\infty, x])=\\ = \mathbb{P}(X \leq x)\)</span></p>
+<h1 id="typy-rozkładów-prawdopodobieństwa">Typy rozkładów Prawdopodobieństwa</h1>
+<h2 id="typ-dyskretny">Typ dyskretny</h2>
+<p>F jest typy dyskretnego jeśli <span class="math inline">\(\exists\)</span> zbiór przeliczalny <span class="math inline">\(A \in \mathcal{B}(\mathbb{R})\)</span> t, że <span class="math inline">\(\mathbb{Q}(A) = 1\)</span> gdzie <span class="math inline">\(\mathbb{Q} \sim F\)</span></p>
+<h2 id="rozkład-dyskretny">Rozkład dyskretny</h2>
+<p>Ciąg par (miejsce_skoku, skok) dla dystrybuanty typu dyskretnego</p>
+<hr />
+<h1 id="akapit">Akapit</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h1 id="akapit-1">akapit</h1>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr />
+<h2 id="miary-absolutnie-ciągłe">Miary absolutnie ciągłe</h2>
+<p><span class="math inline">\((\Omega, \mathcal{F})\)</span>,; <span class="math inline">\(\mu, \nu\)</span> miary na <span class="math inline">\(\mathcal{F}\)</span></p>
+<p><span class="math inline">\(\nu\)</span> jest absolutnie ciągła względem <span class="math inline">\(\mu\)</span> jeśli <span class="math inline">\(\forall A \in \mathcal{F} \mu(A) = 0 \Rightarrow \nu(A) = 0\)</span></p>
+<h2 id="miara-prob.-absolutnie-ciągła">Miara prob. absolutnie ciągła</h2>
+<p>Ciągła względem miary Lebesgue'a na borelowskich</p>
+<h1 id="ważne-przykłady-rozkładów-ciągłych">Ważne przykłady rozkładów ciągłych</h1>
+<h2 id="rozkład-normalny">Rozkład normalny</h2>
+<p><span class="math inline">\(f(x) = \frac{1}{\sqrt{2\pi}\sigma}\exp(\frac{(x - \mu)^2}{2\sigma^2})\)</span> Oznaczenie <span class="math inline">\(N(\mu, \sigma^2), \sigma^2 &gt; 0, \mu \in \mathbb{R}\)</span></p>
+<h2 id="rozkład-wykładniczy">Rozkład wykładniczy</h2>
+<p><span class="math inline">\(f(x) = \lambda \exp(-\lambda x)I_{[0, \infty)}(x)\)</span> oznaczenie <span class="math inline">\(EXP(\lambda)\)</span></p>
+<h2 id="rozkład-gammma">Rozkład gammma</h2>
+<p><span class="math inline">\(f(x) = \frac{a^p x^{p-1} e^{-ax}}{\Gamma (p)}I_{(0, \infty)}(x)\)</span></p>
+<p><span class="math inline">\(\Gamma (p) = \int_0^{\infty}x^{p-1}e^{-x}dx\)</span></p>
+<p>Oznaczenie <span class="math inline">\(G(p, a)\)</span></p>
+<h2 id="rozkład-beta-pierwszego-rodzaju">Rozkład Beta (pierwszego rodzaju)</h2>
+<p><span class="math inline">\(f(x) = C x^{a-1}(1-x)^{b-1}I_{(0,1)}(x)\)</span>, <span class="math inline">\(a,b &gt; 0\)</span></p>
+</div>
+</body>
+<script type="text/javascript" src="template.js"></script>
+
+</html>
